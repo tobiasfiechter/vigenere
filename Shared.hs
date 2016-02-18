@@ -17,7 +17,7 @@ prepareText ps = [toUpper p | p <- ps ,isAscii p && isAlpha p]
 
 -- replaces the nth element of a given List with the given element
 replaceNth :: Int -> a -> [a] -> [a]
-replaceNth index newVal (x:xs)				
+replaceNth index newVal (x:xs)
 	| index <= 0 = newVal:xs
 	| otherwise = x:replaceNth (index-1) newVal xs
 replaceNth index newVal [] = [newVal]
@@ -29,6 +29,7 @@ genTups ps = sortBy sortTup (map (\a -> (head a, length a)) $ group $ sort ps)
 sortTup (_,x) (_,y) | x > y = LT
 					| otherwise = GT
 
+-- The six most common characters and the six least common characters for the given language
 german :: [[Char]]
 german = ["ENISRA","PVJYXQ"]
 
