@@ -9,4 +9,4 @@ cabal-version:  >= 1.2
 executable vigenere
   main-is:        Main.hs
   hs-source-dirs: ./
-  build-depends:  base, haskell2010, haskell98, haskell2010
+  build-depends:  haskell2010, split, text, random, prelude, parallel
