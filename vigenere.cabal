@@ -2,7 +2,7 @@ name:           VigenereHaskell
 version:        0.1
 synopsis:       A vigenère cipher encrypter/decrypter and breaker written in Haskell
 author:         Tobias Fiechter & Dario Flury
-license:        
+license:        MIT
 build-type:     Simple
 cabal-version:  >= 1.2
 
